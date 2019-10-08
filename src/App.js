@@ -3,21 +3,18 @@ import "./App.css";
 import Question from "./Question";
 
 function App() {
+  const [prompt, setPrompt] = useState("א");
+  const [regex, setRegex] = useState(/alef/i);
   const [result, setResult] = useState("unanswered");
 
-  const prompt = "א";
-
-  const regex = /alef/i;
-
   const test = answer => {
-    setResult(/alef/i.test(answer) ? "correct" : "incorrect");
-    setTimeout(() => setResult("unanswered"), 1000);
+    setResult(regex.test(answer) ? "correct" : "incorrect");
+    setTimeout(() => {
+      setResult("unanswered");
+      setPrompt("ב");
+      setRegex(/bet/i);
+    }, 1000);
   };
-
-  // const test2 = re => answer => {
-  //   setResult(re.test(answer) ? "correct" : "incorrect");
-  //   setTimeout(() => setResult("unanswered", 1000));
-  // };
 
   let footer = "";
   if (result === "correct") {
@@ -29,7 +26,6 @@ function App() {
   return (
     <div>
       <header>What letter is this?</header>
-      {/* <Question prompt={prompt} checkAnswer={test2(regex)} /> */}
       <Question prompt={prompt} checkAnswer={test} />
       <h1 className="footer">{footer}</h1>
     </div>
