@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Question from "./Question";
 
 function App() {
+  const [result, setResult] = useState("unanswered");
+
+  const prompt = "א";
+
+  const regex = /alef/i;
+
+  const test = answer => {
+    setResult(/alef/i.test(answer) ? "correct" : "incorrect");
+    setTimeout(() => setResult("unanswered"), 1000);
+  };
+
+  // const test2 = re => answer => {
+  //   setResult(re.test(answer) ? "correct" : "incorrect");
+  //   setTimeout(() => setResult("unanswered", 1000));
+  // };
+
+  let footer = "";
+  if (result === "correct") {
+    footer = "correct!";
+  } else if (result === "incorrect") {
+    footer = "incorrect!";
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header>What letter is this?</header>
+      {/* <Question prompt={prompt} checkAnswer={test2(regex)} /> */}
+      <Question prompt={prompt} checkAnswer={test} />
+      <h1 className="footer">{footer}</h1>
     </div>
   );
 }
