@@ -13,7 +13,7 @@ function App() {
 
   const test = answer => {
     setSubmittedAnswer(answer);
-    const isCorrect = question.answers.includes(answer);
+    const isCorrect = question.answers.includes(answer.toLowerCase());
     setResult(isCorrect ? "correct" : "incorrect");
 
     setTimeout(
@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="main">
       <h1>Name the Hebrew letter!</h1>
       <h4>
         Please submit issues{" "}
