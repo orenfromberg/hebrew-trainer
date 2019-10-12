@@ -2,8 +2,8 @@ import React from "react";
 import "./Question.css";
 const Question = ({ prompt, checkAnswer }) => {
   return (
-    <div>
-      <h1 className="he prompt">{prompt}</h1>
+    <div className="question">
+      <div className="he prompt">{prompt}</div>
       <label htmlFor="answer">Answer:</label>
       <input
         type="text"

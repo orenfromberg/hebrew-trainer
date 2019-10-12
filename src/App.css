@@ -28,3 +28,7 @@
 .correct {
   color: green;
 }
+
+.main {
+  margin: auto 40px;
+}
