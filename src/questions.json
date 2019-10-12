@@ -98,11 +98,11 @@
     },
     {
       "prompt": "פ",
-      "answers": ["fay", "phay"]
+      "answers": ["fay"]
     },
     {
       "prompt": "ף",
-      "answers": ["fay sofit", "final fay", "phay sofit", "final phay"]
+      "answers": ["fay sofit", "final fay"]
     },
     {
       "prompt": "צ",
@@ -134,7 +134,7 @@
     },
     {
       "prompt": "ת",
-      "answers": ["thav", "thaw"]
+      "answers": ["thav", "thaw", "tav", "taw"]
     }
   ]
 }

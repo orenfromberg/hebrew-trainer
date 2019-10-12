@@ -9,8 +9,10 @@ const getRandomQuestion = () => Math.floor(Math.random() * questions.length);
 function App() {
   const [question, setQuestion] = useState(questions[getRandomQuestion()]);
   const [result, setResult] = useState("unanswered");
+  const [submittedAnswer, setSubmittedAnswer] = useState("");
 
   const test = answer => {
+    setSubmittedAnswer(answer);
     const isCorrect = question.answers.includes(answer);
     setResult(isCorrect ? "correct" : "incorrect");
 
@@ -25,9 +27,19 @@ function App() {
 
   return (
     <div>
-      <header>What letter is this?</header>
+      <h1>Name the Hebrew letter!</h1>
+      <h4>
+        Please submit issues{" "}
+        <a href="https://github.com/orenfromberg/hebrew-trainer/issues">
+          here.
+        </a>
+      </h4>
       <Question prompt={question.prompt} checkAnswer={test} />
-      <Result result={result} acceptedAnswers={question.answers} />
+      <Result
+        result={result}
+        submittedAnswer={submittedAnswer}
+        acceptedAnswers={question.answers}
+      />
     </div>
   );
 }

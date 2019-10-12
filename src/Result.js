@@ -1,17 +1,29 @@
 import React from "react";
 import "./Question.css";
-const Result = ({ result, acceptedAnswers }) => {
+const Result = ({ result, submittedAnswer, acceptedAnswers }) => {
   if (result === "correct") {
     return (
       <div>
-        <h1 className="footer">Correct!</h1>
+        <h1 className="correct">{submittedAnswer} is correct!</h1>
+        {acceptedAnswers.length > 1 && (
+          <div>
+            <h2>other accepted answers:</h2>
+            <ul>
+              {acceptedAnswers
+                .filter(item => item !== submittedAnswer)
+                .map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   } else if (result === "incorrect") {
     return (
       <div>
-        <h1 className="footer">WRONG</h1>
-        <p>Accepted answers:</p>
+        <h1 className="incorrect">{submittedAnswer} is incorrect!</h1>
+        <h2>Accepted answers:</h2>
         <ul>
           {acceptedAnswers.map(item => (
             <li key={item}>{item}</li>

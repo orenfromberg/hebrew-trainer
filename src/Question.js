@@ -3,7 +3,7 @@ import "./Question.css";
 const Question = ({ prompt, checkAnswer }) => {
   return (
     <div>
-      <h1 className="he">{prompt}</h1>
+      <h1 className="he prompt">{prompt}</h1>
       <label htmlFor="answer">Answer:</label>
       <input
         type="text"
