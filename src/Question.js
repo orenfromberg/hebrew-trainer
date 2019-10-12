@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Question.css";
 const Question = ({ prompt, checkAnswer }) => {
   return (
     <div>
@@ -13,6 +13,7 @@ const Question = ({ prompt, checkAnswer }) => {
         onKeyUp={e => {
           if (e.keyCode === 13) {
             checkAnswer(e.target.value);
+            e.target.value = "";
           }
         }}
       ></input>

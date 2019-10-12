@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 import "./App.css";
 import Question from "./Question";
+import Result from "./Result";
+import { questions } from "./questions.json";
+
+const getRandomQuestion = () => Math.floor(Math.random() * questions.length);
 
 function App() {
-  const [prompt, setPrompt] = useState("א");
-  const [regex, setRegex] = useState(/alef/i);
+  const [question, setQuestion] = useState(questions[getRandomQuestion()]);
   const [result, setResult] = useState("unanswered");
 
   const test = answer => {
-    setResult(regex.test(answer) ? "correct" : "incorrect");
-    setTimeout(() => {
-      setResult("unanswered");
-      setPrompt("ב");
-      setRegex(/bet/i);
-    }, 1000);
-  };
+    const isCorrect = question.answers.includes(answer);
+    setResult(isCorrect ? "correct" : "incorrect");
 
-  let footer = "";
-  if (result === "correct") {
-    footer = "correct!";
-  } else if (result === "incorrect") {
-    footer = "incorrect!";
-  }
+    setTimeout(
+      () => {
+        setResult("unanswered");
+        setQuestion(questions[getRandomQuestion()]);
+      },
+      isCorrect ? 1000 : 4000
+    );
+  };
 
   return (
     <div>
       <header>What letter is this?</header>
-      <Question prompt={prompt} checkAnswer={test} />
-      <h1 className="footer">{footer}</h1>
+      <Question prompt={question.prompt} checkAnswer={test} />
+      <Result result={result} acceptedAnswers={question.answers} />
     </div>
   );
 }

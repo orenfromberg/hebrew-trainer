@@ -1,0 +1,140 @@
+{
+  "questions": [
+    {
+      "prompt": "א",
+      "answers": ["alef", "aleph"]
+    },
+    {
+      "prompt": "בּ",
+      "answers": ["bet", "beth"]
+    },
+    {
+      "prompt": "ב",
+      "answers": ["vet", "veth"]
+    },
+    {
+      "prompt": "גּ",
+      "answers": ["gimel"]
+    },
+    {
+      "prompt": "ג",
+      "answers": ["ghimel", "gimel"]
+    },
+    {
+      "prompt": "דּ",
+      "answers": ["daleth", "dalet"]
+    },
+    {
+      "prompt": "ד",
+      "answers": ["dhaleth", "daleth", "dalet"]
+    },
+    {
+      "prompt": "ה",
+      "answers": ["hey", "hay"]
+    },
+    {
+      "prompt": "ו",
+      "answers": ["vav", "waw"]
+    },
+    {
+      "prompt": "ז",
+      "answers": ["zayin"]
+    },
+    {
+      "prompt": "ח",
+      "answers": ["chet", "khet"]
+    },
+    {
+      "prompt": "ט",
+      "answers": ["tet"]
+    },
+    {
+      "prompt": "י",
+      "answers": ["yudh", "yodh", "yud", "yod"]
+    },
+    {
+      "prompt": "כּ",
+      "answers": ["kaf"]
+    },
+    {
+      "prompt": "כ",
+      "answers": ["chaf", "khaf"]
+    },
+    {
+      "prompt": "ך",
+      "answers": ["chaf sofit", "final chaf", "khaf sofit", "final khaf"]
+    },
+    {
+      "prompt": "ל",
+      "answers": ["lamed", "lamedh"]
+    },
+    {
+      "prompt": "מ",
+      "answers": ["mem"]
+    },
+    {
+      "prompt": "ם",
+      "answers": ["mem sofit", "final mem"]
+    },
+    {
+      "prompt": "נ",
+      "answers": ["nun"]
+    },
+    {
+      "prompt": "ן",
+      "answers": ["nun sofit", "final nun"]
+    },
+    {
+      "prompt": "ס",
+      "answers": ["samech", "samekh"]
+    },
+    {
+      "prompt": "ע",
+      "answers": ["ayin"]
+    },
+    {
+      "prompt": "פּ",
+      "answers": ["pay"]
+    },
+    {
+      "prompt": "פ",
+      "answers": ["fay", "phay"]
+    },
+    {
+      "prompt": "ף",
+      "answers": ["fay sofit", "final fay", "phay sofit", "final phay"]
+    },
+    {
+      "prompt": "צ",
+      "answers": ["tsadi", "tzadi"]
+    },
+    {
+      "prompt": "ץ",
+      "answers": ["tsadi sofit", "tzadi sofit", "final tsadi", "final tzadi"]
+    },
+    {
+      "prompt": "ק",
+      "answers": ["quf", "qof", "kuf", "kof"]
+    },
+    {
+      "prompt": "ר",
+      "answers": ["resh", "reish"]
+    },
+    {
+      "prompt": "שׁ",
+      "answers": ["shin"]
+    },
+    {
+      "prompt": "שׂ",
+      "answers": ["sin"]
+    },
+    {
+      "prompt": "תּ",
+      "answers": ["tav", "taw"]
+    },
+    {
+      "prompt": "ת",
+      "answers": ["thav", "thaw"]
+    }
+  ]
+}
