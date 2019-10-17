@@ -106,11 +106,18 @@
     },
     {
       "prompt": "צ",
-      "answers": ["tsadi", "tzadi"]
+      "answers": ["tsadi", "tzadi", "tzadee"]
     },
     {
       "prompt": "ץ",
-      "answers": ["tsadi sofit", "tzadi sofit", "final tsadi", "final tzadi"]
+      "answers": [
+        "tsadi sofit",
+        "tzadi sofit",
+        "tzadee sofit",
+        "final tsadi",
+        "final tzadi",
+        "final tzadee"
+      ]
     },
     {
       "prompt": "ק",
