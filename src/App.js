@@ -30,16 +30,16 @@ function App() {
       <h1>Name the Hebrew letter!</h1>
       <h4>
         Please submit issues{" "}
-        <a href="https://github.com/orenfromberg/hebrew-trainer/issues">
+        <a href="https://github.com/orenfromberg/hebrew-trainer/issues/new">
           here.
         </a>
       </h4>
-      <Question prompt={question.prompt} checkAnswer={test} />
       <Result
         result={result}
         submittedAnswer={submittedAnswer}
         acceptedAnswers={question.answers}
       />
+      <Question prompt={question.prompt} checkAnswer={test} />
     </div>
   );
 }
