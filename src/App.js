@@ -39,7 +39,7 @@ function App() {
         submittedAnswer={submittedAnswer}
         acceptedAnswers={question.answers}
       />
-      <Question prompt={question.prompt} checkAnswer={test} />
+      <Question result={result} prompt={question.prompt} checkAnswer={test} />
     </div>
   );
 }
