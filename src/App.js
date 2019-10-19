@@ -25,6 +25,11 @@ function App() {
     );
   };
 
+  const getHint = () => {
+    const answersFirstLetters = question.answers.map(item => item[0]);
+    return `The first letter could be "${answersFirstLetters[0].toUpperCase()}"`;
+  }
+
   return (
     <div className="main">
       <h1>Name the Hebrew letter!</h1>
@@ -39,7 +44,12 @@ function App() {
         submittedAnswer={submittedAnswer}
         acceptedAnswers={question.answers}
       />
-      <Question result={result} prompt={question.prompt} checkAnswer={test} />
+      <Question
+        result={result}
+        prompt={question.prompt}
+        checkAnswer={test}
+        hint={getHint}
+      />
     </div>
   );
 }
