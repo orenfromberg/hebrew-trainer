@@ -37,8 +37,8 @@ jobs:
     - name: Invalidate Cloudfront Cache
       uses: actions/aws/cli@master
       with:
-        args: cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths "/*"
+        args: cloudfront create-invalidation --distribution-id ${{ secrets.CDN_DISTRIBUTION_ID }} --paths $CDN_CACHE_PATH
       env: 
-        CDN_DISTRIBUTION_ID: ${{ secrets.CDN_DISTRIBUTION_ID }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        CDN_CACHE_PATH: '/*'
