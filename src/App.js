@@ -12,8 +12,9 @@ function App() {
   const [submittedAnswer, setSubmittedAnswer] = useState("");
 
   const test = answer => {
-    setSubmittedAnswer(answer);
-    const isCorrect = question.answers.includes(answer.toLowerCase());
+    const trimmed_answer = answer.trim();
+    setSubmittedAnswer(trimmed_answer);
+    const isCorrect = question.answers.includes(trimmed_answer.toLowerCase());
     setResult(isCorrect ? "correct" : "incorrect");
 
     setTimeout(
@@ -28,7 +29,7 @@ function App() {
   const getHint = () => {
     const answersFirstLetters = question.answers.map(item => item[0]);
     return `The first letter could be "${answersFirstLetters[0].toUpperCase()}"`;
-  }
+  };
 
   return (
     <div className="main">
@@ -39,7 +40,7 @@ function App() {
         </a>
       </p>
       <Question
-        isDisabled={result!=="unanswered"?true:false}
+        isDisabled={result !== "unanswered" ? true : false}
         prompt={question.prompt}
         checkAnswer={test}
         hint={getHint}
