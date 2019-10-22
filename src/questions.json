@@ -94,19 +94,19 @@
     },
     {
       "prompt": "פּ",
-      "answers": ["pay"]
+      "answers": ["pay", "pei"]
     },
     {
       "prompt": "פ",
-      "answers": ["fay"]
+      "answers": ["fay", "fei"]
     },
     {
       "prompt": "ף",
-      "answers": ["fay sofit", "final fay"]
+      "answers": ["fay sofit", "final fay", "fei sofit", "final fei"]
     },
     {
       "prompt": "צ",
-      "answers": ["tsadi", "tzadi", "tzadee"]
+      "answers": ["tsadi", "tzadi", "tzadee", "tzadei"]
     },
     {
       "prompt": "ץ",
@@ -114,9 +114,11 @@
         "tsadi sofit",
         "tzadi sofit",
         "tzadee sofit",
+        "tzadei sofit",
         "final tsadi",
         "final tzadi",
-        "final tzadee"
+        "final tzadee",
+        "final tzadei"
       ]
     },
     {
