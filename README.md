@@ -1,3 +1,20 @@
+# Hebrew Trainer - מְאַמֵן עִבְרִי
+
+## Introduction
+
+This app is designed to teach the user how to quickly decode Hebrew letters and vowels.
+
+## Support
+
+This app represents the efforts of open source developers who are passionate about teaching Hebrew in a fun and easy way.
+
+To support the development of new features as well as hosting costs of this app, please consider a donation to the following BTC address:
+
+```
+bc1qzcpjfpnaw3cevnrrfv5sf6jjcg0tyc2q35naq7
+```
+**Thank you for your generous support!** 🙌
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
