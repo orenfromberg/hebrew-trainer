@@ -1,12 +1,12 @@
 import React from "react";
 import "./Question.css";
-const Question = ({ result, prompt, checkAnswer, hint }) => {
+const Question = ({ isDisabled, prompt, checkAnswer, hint }) => {
   return (
     <div className="question">
       <div className="he prompt" title={hint()}>{prompt}</div>
       <label htmlFor="answer">Answer:</label>
       <input
-        disabled={result!=="unanswered"?true:false}
+        disabled={isDisabled}
         type="text"
         id="answer"
         name="answer"
