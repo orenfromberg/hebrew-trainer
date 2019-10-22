@@ -10,6 +10,7 @@ const Question = ({ isDisabled, prompt, checkAnswer, hint }) => {
       <input
         className={isDisabled?"invisible":""}
         disabled={isDisabled}
+        spellCheck="false"
         type="text"
         id="answer"
         name="answer"
