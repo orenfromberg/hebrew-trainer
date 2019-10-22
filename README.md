@@ -1,5 +1,5 @@
 # Hebrew Trainer - מְאַמֵן עִבְרִי
-
+[![Actions Status](https://github.com/orenfromberg/hebrew-trainer/workflows/Node%20CI/badge.svg)](https://github.com/orenfromberg/hebrew-trainer/actions)
 ## Introduction
 
 This app is designed to teach the user how to quickly decode Hebrew letters and vowels.
