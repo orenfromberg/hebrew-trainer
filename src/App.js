@@ -45,7 +45,7 @@ function App() {
         acceptedAnswers={question.answers}
       />
       <Question
-        result={result}
+        isDisabled={result!=="unanswered"?true:false}
         prompt={question.prompt}
         checkAnswer={test}
         hint={getHint}
