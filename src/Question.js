@@ -3,9 +3,12 @@ import "./Question.css";
 const Question = ({ isDisabled, prompt, checkAnswer, hint }) => {
   return (
     <div className="question">
-      <div className="he prompt" title={hint()}>{prompt}</div>
-      <label htmlFor="answer">Answer:</label>
+      <div className="prompt" title={hint()}>{prompt}</div>
+      <label 
+        className={isDisabled?"invisible":""}
+        htmlFor="answer">what hebrew letter is this?</label>
       <input
+        className={isDisabled?"invisible":""}
         disabled={isDisabled}
         type="text"
         id="answer"

@@ -1,8 +1,29 @@
-.he {
+* {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 400;
 }
 
 .prompt {
   font-size: 5rem;
+  outline-style: dashed;
+  padding: 0 2rem;
+  margin: 1rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

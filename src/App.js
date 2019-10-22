@@ -32,23 +32,22 @@ function App() {
 
   return (
     <div className="main">
-      <h1>Name the Hebrew letter!</h1>
-      <h4>
+      <p>
         Please submit issues{" "}
         <a href="https://github.com/orenfromberg/hebrew-trainer/issues/new">
           here.
         </a>
-      </h4>
-      <Result
-        result={result}
-        submittedAnswer={submittedAnswer}
-        acceptedAnswers={question.answers}
-      />
+      </p>
       <Question
         isDisabled={result!=="unanswered"?true:false}
         prompt={question.prompt}
         checkAnswer={test}
         hint={getHint}
+      />
+      <Result
+        result={result}
+        submittedAnswer={submittedAnswer}
+        acceptedAnswers={question.answers}
       />
     </div>
   );
