@@ -6,11 +6,8 @@ const Question = ({ isDisabled, prompt, checkAnswer, hint }) => {
       <div className="prompt" title={hint()}>
         {prompt}
       </div>
-      <label className={isDisabled ? "invisible" : ""} htmlFor="answer">
-        what hebrew letter is this?
-      </label>
+      <label htmlFor="answer">what hebrew letter is this?</label>
       <input
-        className={isDisabled ? "invisible" : ""}
         disabled={isDisabled}
         autoCapitalize="false"
         autoCorrect="false"
