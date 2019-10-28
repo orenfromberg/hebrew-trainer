@@ -22,7 +22,7 @@ export default function App() {
               <Link to="/">Home</Link>
             </li>
             {levels.map((level, idx) => (
-              <li>
+              <li key={idx}>
                 <Link to={`/level/${idx}`}>{level.description}</Link>
               </li>
             ))}

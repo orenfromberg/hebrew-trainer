@@ -23,7 +23,7 @@
     {
       "description": "Basic Vowels",
       "start": 34,
-      "end": 35
+      "end": 40
     }
   ],
   "questions": [
@@ -210,6 +210,31 @@
       "prompt": "בָּ",
       "instruction": "what does this sound like?",
       "answers": ["bah", "ba"]
+    },
+    {
+      "prompt": "לֹ",
+      "instruction": "what does this sound like?",
+      "answers": ["lo", "loh"]
+    },
+    {
+      "prompt": "שֻׁ",
+      "instruction": "what does this sound like?",
+      "answers": ["shoo", "shu"]
+    },
+    {
+      "prompt": "מֱּ",
+      "instruction": "what does this sound like?",
+      "answers": ["meh"]
+    },
+    {
+      "prompt": "זֵּ",
+      "instruction": "what does this sound like?",
+      "answers": ["zey", "zei", "zay"]
+    },
+    {
+      "prompt": "אוֹ",
+      "instruction": "what does this sound like?",
+      "answers": ["oh"]
     },
     {
       "prompt": "גִּ",
