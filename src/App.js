@@ -104,7 +104,9 @@ function Level() {
           here.
         </a>
       </p>
-      <p>Lesson: {levels[levelId].description}</p>
+      <p>
+        Level {levelId}: {levels[levelId].description}
+      </p>
       <Question
         isDisabled={result !== "unanswered" ? true : false}
         prompt={questions[questionIndex].prompt}

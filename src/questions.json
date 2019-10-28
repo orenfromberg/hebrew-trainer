@@ -1,19 +1,29 @@
 {
   "levels": [
     {
-      "description": "Alef through Hay",
+      "description": "א בּ ב גּ ג דּ ד ה",
       "start": 0,
       "end": 7
     },
     {
-      "description": "Vav through Chaf",
+      "description": "ו ז ח ט י כּ כ ך",
       "start": 8,
       "end": 15
     },
     {
-      "description": "Lamed through Ayin",
+      "description": "ל מ ם נ ן ס ע",
       "start": 16,
-      "end": 23
+      "end": 22
+    },
+    {
+      "description": "פּ פ ף צ ץ ק",
+      "start": 23,
+      "end": 28
+    },
+    {
+      "description": "ר שׁ שׂ תּ ת",
+      "start": 29,
+      "end": 33
     },
     {
       "description": "Entire Alef Bet",
