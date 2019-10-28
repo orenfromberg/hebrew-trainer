@@ -53,36 +53,46 @@ function Level() {
 
   let location = useLocation();
 
-  const qs = questions.slice(levels[levelId].start, levels[levelId].end);
-  const getRandomQuestion = () => Math.floor(Math.random() * qs.length);
+  const getRandomQuestion = () => {
+    const { start, end } = levels[levelId];
+    return start + Math.round(Math.random() * (end - start));
+  };
 
-  const [question, setQuestion] = useState(qs[getRandomQuestion()]);
+  const [questionIndex, setQuestionIndex] = useState(getRandomQuestion());
   const [result, setResult] = useState("unanswered");
   const [submittedAnswer, setSubmittedAnswer] = useState("");
 
   useEffect(() => {
-    setQuestion(qs[getRandomQuestion()]);
+    setQuestionIndex(getRandomQuestion());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   const test = answer => {
     const trimmed_answer = answer.trim();
     setSubmittedAnswer(trimmed_answer);
-    const isCorrect = question.answers.includes(trimmed_answer.toLowerCase());
+    const isCorrect = questions[questionIndex].answers.includes(
+      trimmed_answer.toLowerCase()
+    );
     setResult(isCorrect ? "correct" : "incorrect");
 
     setTimeout(
       () => {
         setResult("unanswered");
-        const nextQuestion = qs[getRandomQuestion()];
-        setQuestion(nextQuestion);
+        const currentQuestion = questionIndex;
+        let nextQuestion = currentQuestion;
+        while (currentQuestion === nextQuestion) {
+          nextQuestion = getRandomQuestion();
+        }
+        setQuestionIndex(nextQuestion);
       },
       isCorrect ? 1000 : 4000
     );
   };
 
   const getHint = () => {
-    const answersFirstLetters = question.answers.map(item => item[0]);
+    const answersFirstLetters = questions[questionIndex].answers.map(
+      item => item[0]
+    );
     return `The first letter could be "${answersFirstLetters[0].toUpperCase()}"`;
   };
 
@@ -97,14 +107,15 @@ function Level() {
       <p>Lesson: {levels[levelId].description}</p>
       <Question
         isDisabled={result !== "unanswered" ? true : false}
-        prompt={question.prompt}
+        prompt={questions[questionIndex].prompt}
+        instruction={questions[questionIndex].instruction}
         checkAnswer={test}
         hint={getHint}
       />
       <Result
         result={result}
         submittedAnswer={submittedAnswer}
-        acceptedAnswers={question.answers}
+        acceptedAnswers={questions[questionIndex].answers}
       />
     </div>
   );
