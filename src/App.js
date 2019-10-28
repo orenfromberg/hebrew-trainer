@@ -23,7 +23,7 @@ export default function App() {
             </li>
             {levels.map((level, idx) => (
               <li>
-                <Link to={`/stage/${idx}`}>{level.description}</Link>
+                <Link to={`/level/${idx}`}>{level.description}</Link>
               </li>
             ))}
           </ul>
@@ -32,8 +32,8 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/stage/:stageId">
-            <Stage />
+          <Route path="/level/:levelId">
+            <Level />
           </Route>
           <Route path="/">
             <Home />
@@ -48,12 +48,12 @@ function Home() {
   return <h1>Welcome!</h1>;
 }
 
-function Stage() {
-  let { stageId } = useParams();
+function Level() {
+  let { levelId } = useParams();
 
   let location = useLocation();
 
-  const qs = questions.slice(levels[stageId].start, levels[stageId].end);
+  const qs = questions.slice(levels[levelId].start, levels[levelId].end);
   const getRandomQuestion = () => Math.floor(Math.random() * qs.length);
 
   const [question, setQuestion] = useState(qs[getRandomQuestion()]);
@@ -94,7 +94,7 @@ function Stage() {
           here.
         </a>
       </p>
-      <p>Lesson: {levels[stageId].description}</p>
+      <p>Lesson: {levels[levelId].description}</p>
       <Question
         isDisabled={result !== "unanswered" ? true : false}
         prompt={question.prompt}
