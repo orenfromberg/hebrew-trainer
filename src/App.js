@@ -10,7 +10,7 @@ import {
 import "./App.css";
 import Question from "./Question";
 import Result from "./Result";
-import { levels, questions } from "./questions.json";
+import { levels, questions } from "./data.json";
 
 export default function App() {
   return (
