@@ -1,12 +1,12 @@
 import React from "react";
 import "./Question.css";
-const Question = ({ isDisabled, prompt, checkAnswer, hint }) => {
+const Question = ({ isDisabled, prompt, checkAnswer, hint, instruction }) => {
   return (
     <div className="question">
       <div className="prompt" title={hint()}>
         {prompt}
       </div>
-      <label htmlFor="answer">what hebrew letter is this?</label>
+      <label htmlFor="answer">{instruction}</label>
       <input
         disabled={isDisabled}
         autoCapitalize="false"

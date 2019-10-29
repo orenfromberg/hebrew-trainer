@@ -1,0 +1,255 @@
+{
+  "levels": [
+    {
+      "description": "א בּ ב גּ ג דּ ד ה",
+      "start": 0,
+      "end": 7
+    },
+    {
+      "description": "ו ז ח ט י כּ כ ך",
+      "start": 8,
+      "end": 15
+    },
+    {
+      "description": "ל מ ם נ ן ס ע",
+      "start": 16,
+      "end": 22
+    },
+    {
+      "description": "פּ פ ף צ ץ ק",
+      "start": 23,
+      "end": 28
+    },
+    {
+      "description": "ר שׁ שׂ תּ ת",
+      "start": 29,
+      "end": 33
+    },
+    {
+      "description": "Entire Alef Bet",
+      "start": 0,
+      "end": 33
+    },
+    {
+      "description": "Basic Vowels",
+      "start": 34,
+      "end": 40
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "א",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["alef", "aleph"]
+    },
+    {
+      "prompt": "בּ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["bet", "beth"]
+    },
+    {
+      "prompt": "ב",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["vet", "veth"]
+    },
+    {
+      "prompt": "גּ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["gimel"]
+    },
+    {
+      "prompt": "ג",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["ghimel", "gimel"]
+    },
+    {
+      "prompt": "דּ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["daleth", "dalet"]
+    },
+    {
+      "prompt": "ד",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["dhaleth", "daleth", "dalet"]
+    },
+    {
+      "prompt": "ה",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["hey", "hay"]
+    },
+    {
+      "prompt": "ו",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["vav", "waw"]
+    },
+    {
+      "prompt": "ז",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["zayin"]
+    },
+    {
+      "prompt": "ח",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["chet", "khet"]
+    },
+    {
+      "prompt": "ט",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["tet"]
+    },
+    {
+      "prompt": "י",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["yudh", "yodh", "yud", "yod"]
+    },
+    {
+      "prompt": "כּ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["kaf"]
+    },
+    {
+      "prompt": "כ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["chaf", "khaf"]
+    },
+    {
+      "prompt": "ך",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["chaf sofit", "final chaf", "khaf sofit", "final khaf"]
+    },
+    {
+      "prompt": "ל",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["lamed", "lamedh"]
+    },
+    {
+      "prompt": "מ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["mem"]
+    },
+    {
+      "prompt": "ם",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["mem sofit", "final mem"]
+    },
+    {
+      "prompt": "נ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["nun"]
+    },
+    {
+      "prompt": "ן",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["nun sofit", "final nun"]
+    },
+    {
+      "prompt": "ס",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["samech", "samekh"]
+    },
+    {
+      "prompt": "ע",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["ayin"]
+    },
+    {
+      "prompt": "פּ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["pay", "pei"]
+    },
+    {
+      "prompt": "פ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["fay", "fei"]
+    },
+    {
+      "prompt": "ף",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["fay sofit", "final fay", "fei sofit", "final fei"]
+    },
+    {
+      "prompt": "צ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["tsadi", "tzadi", "tzadee", "tzadei"]
+    },
+    {
+      "prompt": "ץ",
+      "instruction": "what hebrew letter is this?",
+      "answers": [
+        "tsadi sofit",
+        "tzadi sofit",
+        "tzadee sofit",
+        "tzadei sofit",
+        "final tsadi",
+        "final tzadi",
+        "final tzadee",
+        "final tzadei"
+      ]
+    },
+    {
+      "prompt": "ק",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["quf", "qof", "kuf", "kof"]
+    },
+    {
+      "prompt": "ר",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["resh", "reish"]
+    },
+    {
+      "prompt": "שׁ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["shin"]
+    },
+    {
+      "prompt": "שׂ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["sin"]
+    },
+    {
+      "prompt": "תּ",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["tav", "taw"]
+    },
+    {
+      "prompt": "ת",
+      "instruction": "what hebrew letter is this?",
+      "answers": ["thav", "thaw", "tav", "taw"]
+    },
+    {
+      "prompt": "בָּ",
+      "instruction": "what does this sound like?",
+      "answers": ["bah", "ba"]
+    },
+    {
+      "prompt": "לֹ",
+      "instruction": "what does this sound like?",
+      "answers": ["lo", "loh"]
+    },
+    {
+      "prompt": "שֻׁ",
+      "instruction": "what does this sound like?",
+      "answers": ["shoo", "shu"]
+    },
+    {
+      "prompt": "מֱּ",
+      "instruction": "what does this sound like?",
+      "answers": ["meh"]
+    },
+    {
+      "prompt": "זֵּ",
+      "instruction": "what does this sound like?",
+      "answers": ["zey", "zei", "zay"]
+    },
+    {
+      "prompt": "אוֹ",
+      "instruction": "what does this sound like?",
+      "answers": ["oh"]
+    },
+    {
+      "prompt": "גִּ",
+      "instruction": "what does this sound like?",
+      "answers": ["gee", "gi"]
+    }
+  ]
+}
