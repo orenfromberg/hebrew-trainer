@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
+  NavLink,
   useParams,
   useLocation
 } from "react-router-dom";
@@ -19,11 +19,27 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                exact={true}
+                activeStyle={{
+                  fontWeight: "bold"
+                }}
+              >
+                Home
+              </NavLink>
             </li>
             {levels.map((level, idx) => (
               <li key={idx}>
-                <Link to={`/level/${idx}`}>{level.description}</Link>
+                <NavLink
+                  to={`/level/${idx}`}
+                  exact={true}
+                  activeStyle={{
+                    fontWeight: "bold"
+                  }}
+                >
+                  {level.description}
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -45,7 +61,16 @@ export default function App() {
 }
 
 function Home() {
-  return <h1>Welcome!</h1>;
+  return (
+    <div>
+      <p>
+        Please submit issues{" "}
+        <a href="https://github.com/orenfromberg/hebrew-trainer/issues/new">
+          here.
+        </a>
+      </p>
+    </div>
+  );
 }
 
 function Level() {
@@ -98,12 +123,6 @@ function Level() {
 
   return (
     <div className="main">
-      <p>
-        Please submit issues{" "}
-        <a href="https://github.com/orenfromberg/hebrew-trainer/issues/new">
-          here.
-        </a>
-      </p>
       <p>
         Level {levelId}: {levels[levelId].description}
       </p>
