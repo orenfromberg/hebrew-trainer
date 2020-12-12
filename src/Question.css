@@ -22,4 +22,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.prompt::after {
+  content: "";
+  width: 50%;
+  height: 3.5rem;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  position: absolute;
+  top: 23%;
+  left: 25%;
+}
+
+.prompt::before {
+  content: "";
 }
