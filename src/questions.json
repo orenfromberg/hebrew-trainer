@@ -18,7 +18,7 @@
     },
     {
       "prompt": "ג",
-      "answers": ["ghimel", "gimel"]
+      "answers": ["ghimel", "gimel", "gimmel"]
     },
     {
       "prompt": "דּ",
@@ -30,7 +30,7 @@
     },
     {
       "prompt": "ה",
-      "answers": ["hey", "hay"]
+      "answers": ["hey", "hay", "hai", "hei"]
     },
     {
       "prompt": "ו",
@@ -42,7 +42,7 @@
     },
     {
       "prompt": "ח",
-      "answers": ["chet", "khet"]
+      "answers": ["chet", "khet", "hat", "xat"]
     },
     {
       "prompt": "ט",
@@ -54,15 +54,15 @@
     },
     {
       "prompt": "כּ",
-      "answers": ["kaf"]
+      "answers": ["kaf", "caf"]
     },
     {
       "prompt": "כ",
-      "answers": ["chaf", "khaf"]
+      "answers": ["chaf", "khaf", "haf", "xaf"]
     },
     {
       "prompt": "ך",
-      "answers": ["chaf sofit", "final chaf", "khaf sofit", "final khaf"]
+      "answers": ["chaf sofit", "final chaf", "khaf sofit", "final khaf", "haf sofit", "final haf", "xaf sofit", "final xaf", "caf sofit", "final caf", "kaf sofit", "final kaf"]
     },
     {
       "prompt": "ל",
@@ -86,7 +86,7 @@
     },
     {
       "prompt": "ס",
-      "answers": ["samech", "samekh"]
+      "answers": ["samech", "samekh", "samex", "sameh"]
     },
     {
       "prompt": "ע",
@@ -102,7 +102,7 @@
     },
     {
       "prompt": "ף",
-      "answers": ["fay sofit", "final fay", "fei sofit", "final fei"]
+      "answers": ["fay sofit", "final fay", "fei sofit", "final fei", "pay sofit", "final pay", "pei sofit", "final pei"]
     },
     {
       "prompt": "צ",
@@ -123,7 +123,7 @@
     },
     {
       "prompt": "ק",
-      "answers": ["quf", "qof", "kuf", "kof"]
+      "answers": ["quf", "qof", "kuf", "kof", "qoof", "koof"]
     },
     {
       "prompt": "ר",
